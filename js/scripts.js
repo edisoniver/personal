@@ -23,10 +23,8 @@ window.onload = function() {
 
   var messages = [
     'Hey there 👋',
-    'My name is Iver',
-    'I work fulltime as an NDT and study computer science at QUT.',
-    'You can contact me on <a href="https://t.me/edisoniver">telegram</a>',
-    'Follow my trading log here <br> <a href="https://t.me/ivertradinglog">t.me/ivertradinglog </a>',
+    'Welcome to Botor.io',
+    'We create automized solutions for clients.',
     getCurrentTime(),
     '👀 Iver ~.'
   ]
