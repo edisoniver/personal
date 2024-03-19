@@ -26,7 +26,7 @@ window.onload = function() {
     'Welcome to Botor.io',
     'We create automized solutions for clients.',
     getCurrentTime(),
-    '👀 Iver ~.'
+    '👀Email us at iver@botor.io'
   ]
 
   var getFontSize = function() {
