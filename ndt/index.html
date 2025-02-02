@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NDT Assistant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="NDT Assistant Prompt Guide" />
+    <link rel="icon" type="image/png" href="../../img/favicon.png" />
+    <link rel="apple-touch-icon" href="../../img/apple-touch-icon.png" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #031B4E;
+            color: white;
+        }
+        .creator {
+            font-size: 0.9em;
+            color: #E5E8ED;
+            margin-top: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .guide-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .example {
+            background: #f8f9fa;
+            border-left: 4px solid #0061EB;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        h2 {
+            color: #031B4E;
+            border-bottom: 2px solid #E5E8ED;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #0061EB;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .tip {
+            background: #e8f4ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .tip::before {
+            content: "💡 Tip: ";
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+            }
+            .guide-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NDT Assistant Prompt Guide</h1>
+        <div class="creator">Created by Edison Botor</div>
+    </div>
+    
+    <div class="content">
+        <div class="guide-section">
+            <h2>How to Write Effective NDT Prompts</h2>
+            <p>Learn how to structure your questions to get the most accurate and helpful responses from the NDT Assistant.</p>
+            
+            <h3>1. Specify Your Region</h3>
+            <p>Always indicate whether you're working under Australian (AS/NZS) or American (ASME) standards.</p>
+            <div class="example">
+                ✅ "What are the UT calibration requirements for pipeline welds under AS/NZS standards?"<br>
+                ❌ "What are the UT calibration requirements for pipeline welds?"
+            </div>
+
+            <h3>2. Include Technical Context</h3>
+            <ul>
+                <li>Material type and thickness</li>
+                <li>Equipment model/type</li>
+                <li>Specific procedure or standard reference</li>
+                <li>Type of inspection being performed</li>
+            </ul>
+            <div class="tip">
+                Include relevant parameters like wall thickness, material grade, or operating conditions for more precise guidance.
+            </div>
+
+            <h3>3. Structure Your Question</h3>
+            <div class="example">
+                "I need guidance on:<br>
+                - Inspection type: UT shear wave<br>
+                - Standard: ASME Section V<br>
+                - Material: Carbon steel pipe<br>
+                - Thickness: 12mm<br>
+                - Specific query: DAC curve setup requirements"
+            </div>
+
+            <h3>4. Sample Prompts</h3>
+            <div class="example">
+                "Under AS/NZS standards, what are the acceptance criteria for:
+                - MT inspection
+                - Carbon steel pressure vessel
+                - T-joint welds
+                - Material thickness: 25mm"
+            </div>
+
+            <div class="tip">
+                For urgent queries, start your prompt with "URGENT:" to indicate time-critical nature.
+            </div>
+
+            <h3>5. Follow-up Questions</h3>
+            <p>If you need clarification, reference your previous question and specify what additional information you need.</p>
+            <div class="example">
+                "Regarding the previous MT acceptance criteria, can you clarify the requirements for:
+                - Linear indications
+                - Maximum allowable cluster length"
+            </div>
+        </div>
+
+        <!-- Chatbot Widget Script -->
+        <script async
+            src="https://agent-1116dac1e1ea1110f4f2-xqtx3.ondigitalocean.app/static/chatbot/widget.js"
+            data-agent-id="4087ea86-e0e5-11ef-bf8f-4e013e2ddde4"
+            data-chatbot-id="W6riGyXc9BdUI2lGGUTqrjBA8tEA_nN0"
+            data-name="NDT Assistant"
+            data-primary-color="#031B4E"
+            data-secondary-color="#E5E8ED"
+            data-button-background-color="#0061EB"
+            data-starting-message="Hello, How may I help you as your personal NDT assistant? I can provide help with documentation, tips, procedure confirmations, numbers etc."
+            data-logo="/static/chatbot/icons/default-agent.svg">
+        </script>
+    </div>
+</body>
+</html> 
